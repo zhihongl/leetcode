@@ -29,13 +29,15 @@ fib = function (N) {
 fib = function (N) {
   if (N < 1) return 0;
   if (N === 1 || N === 2) return 1;
-  let arr = Array(N).fill(0);
-  arr[1] = 1;
-  arr[2] = 1;
+  let pre = 1,
+    cur = 1,
+    sum = 0;
   for (let i = 3; i <= N; i++) {
-    arr[i] = arr[i - 1] + arr[i - 2];
+    sum = pre + cur;
+    pre = cur;
+    cur = sum;
   }
-  return arr[N];
+  return cur;
 };
 
 console.log("fib(25)", fib(25));
