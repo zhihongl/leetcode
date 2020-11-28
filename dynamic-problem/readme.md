@@ -1,5 +1,11 @@
 ## Dynamic Problem List
 
+Each one contains three ways to implement it.
+
+- Recursion. This way maynot pass the problem due to `Running Time` Error
+- Recursion with dp table (from top to bottom)
+- Iteration from bottom to top
+
 EASY:
 
 - [121. Best time to buy and sell stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
